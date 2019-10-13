@@ -1,0 +1,3 @@
+verilog isim_temp "Part2B.v"
+verilog isim_temp "test.v"
+verilog isim_temp "D:/ISEXixin/14.7/ISE_DS/ISE//verilog/src/glbl.v"

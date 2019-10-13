@@ -1,0 +1,71 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Part2A.vf
+// /___/   /\     Timestamp : 10/09/2019 22:23:45
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog B:/EE120A/Lab2Part2A/Part2A.vf -w B:/EE120A/Lab2Part2A/Part2A.sch
+//Design Name: Part2A
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module Part2A(i0, 
+              i1, 
+              i2, 
+              i3, 
+              s1, 
+              s2, 
+              d);
+
+    input i0;
+    input i1;
+    input i2;
+    input i3;
+    input s1;
+    input s2;
+   output d;
+   
+   wire XLXN_7;
+   wire XLXN_8;
+   wire XLXN_12;
+   wire XLXN_13;
+   wire XLXN_14;
+   wire XLXN_15;
+   
+   INV  XLXI_1 (.I(s1), 
+               .O(XLXN_7));
+   INV  XLXI_2 (.I(s2), 
+               .O(XLXN_8));
+   AND3  XLXI_3 (.I0(i0), 
+                .I1(XLXN_8), 
+                .I2(XLXN_7), 
+                .O(XLXN_12));
+   AND3  XLXI_4 (.I0(i1), 
+                .I1(s2), 
+                .I2(XLXN_7), 
+                .O(XLXN_13));
+   AND3  XLXI_5 (.I0(i2), 
+                .I1(XLXN_8), 
+                .I2(s1), 
+                .O(XLXN_14));
+   AND3  XLXI_6 (.I0(i3), 
+                .I1(s2), 
+                .I2(s1), 
+                .O(XLXN_15));
+   OR4  XLXI_7 (.I0(XLXN_15), 
+               .I1(XLXN_14), 
+               .I2(XLXN_13), 
+               .I3(XLXN_12), 
+               .O(d));
+endmodule

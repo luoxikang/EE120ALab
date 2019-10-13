@@ -1,0 +1,83 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Part1V1.vf
+// /___/   /\     Timestamp : 10/07/2019 20:51:27
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog B:/StevenXikangLab2/Part1V1.vf -w B:/StevenXikangLab2/Part1V1.sch
+//Design Name: Part1V1
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module Part1V1(d, 
+               i0, 
+               i1, 
+               i2, 
+               i3, 
+               s1, 
+               s2);
+
+   output d;
+   output i0;
+   output i1;
+   output i2;
+   output i3;
+   output s1;
+   output s2;
+   
+   wire XLXN_53;
+   wire XLXN_54;
+   wire XLXN_74;
+   wire XLXN_77;
+   wire XLXN_79;
+   wire XLXN_80;
+   wire s1_DUMMY;
+   wire s2_DUMMY;
+   wire i0_DUMMY;
+   wire i1_DUMMY;
+   wire i2_DUMMY;
+   wire i3_DUMMY;
+   
+   assign i0 = i0_DUMMY;
+   assign i1 = i1_DUMMY;
+   assign i2 = i2_DUMMY;
+   assign i3 = i3_DUMMY;
+   assign s1 = s1_DUMMY;
+   assign s2 = s2_DUMMY;
+   INV  XLXI_13 (.I(s1_DUMMY), 
+                .O(XLXN_53));
+   INV  XLXI_14 (.I(s2_DUMMY), 
+                .O(XLXN_54));
+   AND3  XLXI_15 (.I0(XLXN_54), 
+                 .I1(XLXN_53), 
+                 .I2(i0_DUMMY), 
+                 .O(XLXN_74));
+   AND3  XLXI_16 (.I0(s2_DUMMY), 
+                 .I1(XLXN_53), 
+                 .I2(i1_DUMMY), 
+                 .O(XLXN_79));
+   AND3  XLXI_17 (.I0(XLXN_54), 
+                 .I1(s1_DUMMY), 
+                 .I2(i2_DUMMY), 
+                 .O(XLXN_80));
+   AND3  XLXI_19 (.I0(s2_DUMMY), 
+                 .I1(s1_DUMMY), 
+                 .I2(i3_DUMMY), 
+                 .O(XLXN_77));
+   OR4  XLXI_20 (.I0(XLXN_77), 
+                .I1(XLXN_80), 
+                .I2(XLXN_79), 
+                .I3(XLXN_74), 
+                .O(d));
+endmodule
