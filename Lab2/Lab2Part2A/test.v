@@ -39,8 +39,8 @@ module Part2A_Part2A_sch_tb();
 	$display("TC-i0");
 	if(d != i0)$display("Result is wrong");
 	
-	i0 = 0;
-	i1 = 1;
+	i0 = 1;
+	i1 = 0;
 	i2 = 0;
 	i3 = 0;
 	s1 = 0;
@@ -49,9 +49,9 @@ module Part2A_Part2A_sch_tb();
 	$display("TC-i1");
 	if(d != i1)$display("Result is wrong");
 	
-	i0 = 0;
+	i0 = 1;
 	i1 = 0;
-	i2 = 1;
+	i2 = 0;
 	i3 = 0;
 	s1 = 1;
 	s2 = 0;
@@ -59,10 +59,10 @@ module Part2A_Part2A_sch_tb();
 	$display("TC-i2");
 	if(d != i2)$display("Result is wrong");
 	
-	i0 = 0;
+	i0 = 1;
 	i1 = 0;
 	i2 = 0;
-	i3 = 1;
+	i3 = 0;
 	s1 = 1;
 	s2 = 1;
 	#100;

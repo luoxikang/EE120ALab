@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "B:/EE120A/Lab2Part2A/Part2A_Part2A_sch_tb_isim_beh.exe" -prj "B:/EE120A/Lab2Part2A/Part2A_Part2A_sch_tb_beh.prj" "work.Part2A_Part2A_sch_tb" "work.glbl" 
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "B:/EE120ALab/Lab2/Lab2Part2A/Part2A_Part2A_sch_tb_isim_beh.exe" -prj "B:/EE120ALab/Lab2/Lab2Part2A/Part2A_Part2A_sch_tb_beh.prj" "work.Part2A_Part2A_sch_tb" "work.glbl" 

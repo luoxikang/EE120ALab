@@ -1,0 +1,33 @@
+xst -intstyle ise -ifn "B:/EE120ALab/Lab3/Part3/MOdule.xst" -ofn "B:/EE120ALab/Lab3/Part3/MOdule.syr" 
+xst -intstyle ise -ifn "B:/EE120ALab/Lab3/Part3/MOdule.xst" -ofn "B:/EE120ALab/Lab3/Part3/MOdule.syr" 
+xst -intstyle ise -ifn "B:/EE120ALab/Lab3/Part3/MOdule.xst" -ofn "B:/EE120ALab/Lab3/Part3/MOdule.syr" 
+xst -intstyle ise -ifn "B:/EE120ALab/Lab3/Part3/MOdule.xst" -ofn "B:/EE120ALab/Lab3/Part3/MOdule.syr" 
+xst -intstyle ise -ifn "B:/EE120ALab/Lab3/Part3/MOdule.xst" -ofn "B:/EE120ALab/Lab3/Part3/MOdule.syr" 
+xst -intstyle ise -ifn "B:/EE120ALab/Lab3/Part3/MOdule.xst" -ofn "B:/EE120ALab/Lab3/Part3/MOdule.syr" 
+xst -intstyle ise -ifn "B:/EE120ALab/Lab3/Part3/MOdule.xst" -ofn "B:/EE120ALab/Lab3/Part3/MOdule.syr" 
+xst -intstyle ise -ifn "B:/EE120ALab/Lab3/Part3/MOdule.xst" -ofn "B:/EE120ALab/Lab3/Part3/MOdule.syr" 
+xst -intstyle ise -ifn "B:/EE120ALab/Lab3/Part3/MOdule.xst" -ofn "B:/EE120ALab/Lab3/Part3/MOdule.syr" 
+xst -intstyle ise -ifn "B:/EE120ALab/Lab3/Part3/MOdule.xst" -ofn "B:/EE120ALab/Lab3/Part3/MOdule.syr" 
+xst -intstyle ise -ifn "B:/EE120ALab/Lab3/Part3/MOdule.xst" -ofn "B:/EE120ALab/Lab3/Part3/MOdule.syr" 
+xst -intstyle ise -ifn "B:/EE120ALab/Lab3/Part3/MOdule.xst" -ofn "B:/EE120ALab/Lab3/Part3/MOdule.syr" 
+xst -intstyle ise -ifn "B:/EE120ALab/Lab3/Part3/MOdule.xst" -ofn "B:/EE120ALab/Lab3/Part3/MOdule.syr" 
+xst -intstyle ise -ifn "B:/EE120ALab/Lab3/Part3/MOdule.xst" -ofn "B:/EE120ALab/Lab3/Part3/MOdule.syr" 
+xst -intstyle ise -ifn "B:/EE120ALab/Lab3/Part3/MOdule.xst" -ofn "B:/EE120ALab/Lab3/Part3/MOdule.syr" 
+xst -intstyle ise -ifn "B:/EE120ALab/Lab3/Part3/MOdule.xst" -ofn "B:/EE120ALab/Lab3/Part3/MOdule.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UCF.ucf -p xc3s100e-cp132-5 MOdule.ngc MOdule.ngd  
+xst -intstyle ise -ifn "B:/EE120ALab/Lab3/Part3/MOdule.xst" -ofn "B:/EE120ALab/Lab3/Part3/MOdule.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UCF.ucf -p xc3s100e-cp132-5 MOdule.ngc MOdule.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UCF.ucf -p xc3s100e-cp132-5 MOdule.ngc MOdule.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UCF.ucf -p xc3s100e-cp132-5 MOdule.ngc MOdule.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UCF.ucf -p xc3s100e-cp132-5 MOdule.ngc MOdule.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o MOdule_map.ncd MOdule.ngd MOdule.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UCF.ucf -p xc3s100e-cp132-5 MOdule.ngc MOdule.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o MOdule_map.ncd MOdule.ngd MOdule.pcf 
+par -w -intstyle ise -ol high -t 1 MOdule_map.ncd MOdule.ncd MOdule.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MOdule.twx MOdule.ncd -o MOdule.twr MOdule.pcf -ucf UCF.ucf 
+bitgen -intstyle ise -f MOdule.ut MOdule.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UCF.ucf -p xc3s100e-cp132-5 MOdule.ngc MOdule.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o MOdule_map.ncd MOdule.ngd MOdule.pcf 
+par -w -intstyle ise -ol high -t 1 MOdule_map.ncd MOdule.ncd MOdule.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MOdule.twx MOdule.ncd -o MOdule.twr MOdule.pcf -ucf UCF.ucf 
+bitgen -intstyle ise -f MOdule.ut MOdule.ncd 

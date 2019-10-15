@@ -1,5 +1,5 @@
 ISim log file
-Running: B:\EE120A\Lab2Part2A\Part2A_Part2A_sch_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb B:/EE120A/Lab2Part2A/Part2A_Part2A_sch_tb_isim_beh.wdb 
+Running: B:\EE120ALab\Lab2\Lab2Part2A\Part2A_Part2A_sch_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb B:/EE120ALab/Lab2/Lab2Part2A/Part2A_Part2A_sch_tb_isim_beh.wdb 
 ISim P.20131013 (signature 0x7708f090)
 WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.

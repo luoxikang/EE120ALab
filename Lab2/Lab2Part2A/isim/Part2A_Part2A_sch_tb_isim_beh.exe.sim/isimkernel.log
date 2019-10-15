@@ -2,14 +2,14 @@ Command line:
    Part2A_Part2A_sch_tb_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  54538
+     -socket  51755
 
-Wed Oct 09 23:45:32 2019
+Mon Oct 14 16:53:50 2019
 
 
- Elaboration Time: 0.015625 sec
+ Elaboration Time: 0.03125 sec
 
- Current Memory Usage: 5164.01 Meg
+ Current Memory Usage: 5163.43 Meg
 
  Total Signals          : 52
  Total Nets             : 26
@@ -23,7 +23,7 @@ Total Line Count : 51
 
  Total Simulation Time: 0.0625 sec
 
- Current Memory Usage: 5006.73 Meg
+ Current Memory Usage: 5163.43 Meg
 
-Wed Oct 09 23:49:15 2019
+Mon Oct 14 16:54:09 2019
 
