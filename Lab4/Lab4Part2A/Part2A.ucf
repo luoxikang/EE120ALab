@@ -1,0 +1,2 @@
+NET "Inpt1" LOC = "N3";
+NET "Output1" LOC = "G1";

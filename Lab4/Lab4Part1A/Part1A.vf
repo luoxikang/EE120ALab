@@ -1,0 +1,54 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Part1A.vf
+// /___/   /\     Timestamp : 10/16/2019 04:22:48
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog B:/EE120ALab/Lab3/Lab4Part1A/Part1A.vf -w B:/EE120ALab/Lab3/Lab4Part1A/Part1A.sch
+//Design Name: Part1A
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module Part1A(Call, 
+              Cancel, 
+              CLK, 
+              OOOut);
+
+    input Call;
+    input Cancel;
+    input CLK;
+   output OOOut;
+   
+   wire XLXN_5;
+   wire XLXN_6;
+   wire XLXN_7;
+   wire XLXN_9;
+   wire OOOut_DUMMY;
+   
+   assign OOOut = OOOut_DUMMY;
+   AND3  XLXI_1 (.I0(XLXN_7), 
+                .I1(XLXN_6), 
+                .I2(OOOut_DUMMY), 
+                .O(XLXN_5));
+   OR2  XLXI_2 (.I0(Call), 
+               .I1(XLXN_5), 
+               .O(XLXN_9));
+   FD #( .INIT(1'b0) ) XLXI_3 (.C(CLK), 
+              .D(XLXN_9), 
+              .Q(OOOut_DUMMY));
+   INV  XLXI_4 (.I(Cancel), 
+               .O(XLXN_6));
+   INV  XLXI_5 (.I(Call), 
+               .O(XLXN_7));
+endmodule

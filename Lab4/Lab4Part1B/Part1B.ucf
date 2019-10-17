@@ -1,0 +1,4 @@
+NET "OOOut" LOC = "G1";
+NET "Call" LOC = "N3";
+NET "Cancel" LOC = "E2";
+NET "CLK" LOC = "B8" ;

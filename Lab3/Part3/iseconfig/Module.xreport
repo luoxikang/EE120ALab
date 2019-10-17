@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2019-10-14T18:31:43</DateModified>
+  <DateModified>2019-10-16T04:03:22</DateModified>
   <ModuleName>Module</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>B:/EE120ALab/Lab3/Part3/iseconfig/Module.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>B:/EE120ALab/Lab3/Part3</ImplementationReportsDirectory>
+  <SavedFilePath>B:/EE120ALab/Lab3/Part3/iseconfig/MOdule.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>B:/EE120ALab/Lab3/Part3\</ImplementationReportsDirectory>
   <DateInitialized>2019-10-14T18:30:42</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
